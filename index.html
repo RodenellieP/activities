@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activities</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #304CB2;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #304CB2;
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 4px solid #FFBF27;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    header span {
+      font-size: 1.8rem;
+      color: #FFBF27;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      background: linear-gradient(160deg, #304CB2 60%, #E31837 100%);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .hero h2 span {
+      color: #FFBF27;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.7;
+      opacity: 0.92;
+      margin-bottom: 40px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+
+    .badge {
+      background-color: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 999px;
+      padding: 10px 24px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .cta {
+      background-color: #FFBF27;
+      color: #304CB2;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 40px;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+
+    .cta:hover { opacity: 0.85; }
+
+    .features {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      padding: 64px 24px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #304CB2;
+      margin-bottom: 48px;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: #f5f7ff;
+      border-radius: 16px;
+      padding: 32px 24px;
+      width: 240px;
+      text-align: center;
+    }
+
+    .feature-card .icon {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #304CB2;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span>Activities</span></h1>
+  </header>
+
+  <section class="hero">
+    <h2>Discover What to Do<br/><span>Wherever You Fly</span></h2>
+    <p>
+      Activities connects travelers with unforgettable local experiences
+      at every destination. Search, compare, and book tours, excursions, and
+      activities — and earn Rewards points on every booking.
+    </p>
+    <div class="badges">
+      <span class="badge">✈️ US Destinations</span>
+      <span class="badge">⭐ Rewards Points</span>
+      <span class="badge">🗺️ Curated Experiences</span>
+      <span class="badge">📱 Web and Mobile</span>
+    </div>
+    <a class="cta" href="mailto:contact@activities.com">
+      Get in Touch
+    </a>
+  </section>
+
+  <section class="features">
+    <h3>Everything in One Place</h3>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🔍</div>
+        <h4>Search by Destination</h4>
+        <p>Find activities across top US cities the moment you book your flight.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎯</div>
+        <h4>Book with Confidence</h4>
+        <p>Curated experiences powered by trusted activity partners worldwide.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🏆</div>
+        <h4>Earn Rewards</h4>
+        <p>Accumulate points on every activity booking and climb your tier faster.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📋</div>
+        <h4>Build Your Itinerary</h4>
+        <p>Plan your entire trip in one place and compare activities side by side.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Activities. A concept platform for US domestic travel experiences.
+  </footer>
+
+</body>
+</html>
